@@ -4,148 +4,11 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>CSS Responsive Layout</title>
-
-            <style>
-                *{
-                    box-sizing: border-box;
-                }
-                .row:after{
-                    content: "";
-                    display: table;
-                    clear:both;
-                }
-
-                p {
-                    font-family: arial;
-                    font-size: 18px;
-                }
-
-                h1, h2, h3, h4, h5 h6{
-                    font-family: 'Fjalla One' sans-serif;
-                }
-                
-                
-                
-/* This is the style for the header section*/
-.header-row{
-background-color: #333;
-padding: 20px 20px 0px 20px;
-text-align: center;
-overflow: hidden;
-
-}
-
-header a.logo{
-    float: left;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-}
-
-header a:hover{
-    opacity: 80%;
-}
-
-@media screen and (max-width: 600px){
-    .column.side, .column.main{
-        width: 100%
-    }
-}
-
-/* When the device is less than 600px, the links in the menu will stack on top of eachother, instead of next to eachother. */
-
-@media screeb and(max-width:600px){
-    .horizontal-menu a{
-        float: none;
-        width: 100%;
-    }
-}
-
-/*This is the style for the horizontal menu*/
-div.horizontal-menu{
-    overflow: hidden;
-    background-color:#333;
-    float: right;
-
-
-}
-.horizontal-menu a{
-    float: left;
-    display:block ;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px 20px;
-    text-decoration: none;
-
-}
-/* This is the style for the hover state*/ 
-.horizontal-menu a:hover{
-   background-color: #f1f1f1;
-   color: black;
-
-}
-/* Create 3 Columns and they float next to eachother. */
-.column{
-    float: left;
-    padding: 20px ;
-}
-/* Left and right side bar */
-.column.side{
-    width: 25%;
-background-color: #c3c3c3;
-
-}
-.column.copyright{
-   width: 100%; 
-   background-color: black;
-   color: white;
-}
-.left{
-    width: 50%; 
-    padding: 10px;
-    font-size: 18px;
-    float: left;
-}
-.right{
-    width: 50%; 
-    padding: 10px;
-    font-size: 18px;
-    float: right;  
-}
-a.copyright{
-    color: white;
-
-}
-a:hover{
-    color: #d3d3d3;
-    text-decoration: none;
-}
-/* Main content area*/
-
-.column.main{
-    width: 50%;
-}
-
-div.footer{
-    width: 33.3%;
-    background-color: #d3d3d3;
-    border-left: 2px solid white;
-
-}
-.column.left{
-    width: 50%;
-    padding: 10px;
-    font-size: 14px;
-    float: left;
-   color: white;
-}
-
-.column.right{
-    width: 50%;
-    padding: 10px;
-    font-size: 14px;
-    float: right;
-}
+            <!-- This is a link to an external CSS File -->
+             <link rel="stylesheet" type="text/css" href="css/style.css">
+             <link rel="stylesheet" type="text/css" href="css/horizontal-menu/horizontal-menu.css">
+             <style>
+             /* This is an internal CSS File */
             </style>
         </head>
         <body>
@@ -155,7 +18,7 @@ div.footer{
    
     
     <div class="header-row">
-        <a class="logo" title="Lotus flower logo" href="#"><img title="Lotus flower logo" alt="Lotus flower logo" src="lotus-flower-logo.png" width=""150px height="81px" /></a>
+        <a class="logo" title="Lotus flower logo" href="#"><img title="Lotus flower logo" alt="Lotus flower logo" src="images/lotus-flower-company-logo.png" width=""350px height="61px" /></a>
         
         <div class="horizontal-menu">
             <a href="#">HOME</a>
@@ -174,7 +37,7 @@ div.footer{
     <div class="column side">
         <h2>Side bar</h2>
         
-        <img title="Beautiful Purple Rose" alt="Front of a Purple Rose" src="purple-rose.jpg" width="100%" height= "220px"/>
+        <img title="Beautiful Purple Rose" alt="Front of a Purple Rose" src="images/purple-rose.jpg" width="100%" height= "220px"/>
 
     
     
@@ -193,33 +56,50 @@ div.footer{
 
     <img title="Place a Nice Title using Keywords" alt="Describe the image using the main keyword" src="Path where the image is" />
 
-    <img title="Relaxing beach vacation" alt="Holiday beach vacation relaxing on the sand" src="holliday.png" width="100%" height=""/>
+    <img title="Relaxing beach vacation" alt="Holiday beach vacation relaxing on the sand" src="images/holliday.png" width="100%" height=""/>
 
-    <img title="cupcake" alt="cupcake" src="cupcake.jpg" width="100%" height=""/>
+    <img title="cupcake" alt="cupcake" src="images/cupcake.jpg" width="100%" height=""/>
 </div>
 
 <div class="column side">
     <h2>Side bar</h2>
-    <img title="A woman riding a horse" alt="A woman riding a horse on a field" src="woman-riding-a-horse.jpg" width="100%" height="220px"/>
+    <img title="A woman riding a horse" alt="A woman riding a horse on a field" src="images/woman-riding-a-horse.jpg" width="100%" height="220px"/>
 </div>
 </div>
 <footer>
     <div class="column footer">
         <h2>Get in touch</h2>
-        <h3>Lotus Flower</h3>
-        <img title="Lotus flower logo" alt="Lotus flower logo" src="lotus-flower-logo.png" width=""200px height="107px" /></a>
-        <p><strong>Phone number: </strong><a href="tel:5613333333">561-333-3333</a></p>
-        <p><strong>Phone number: </strong><a href="mailto:saracarmel7@gmail.com">saracarmel7@gmail.com</a></p>
+        <h3>Lotus Flower Company</h3>
+        <img title="Lotus flower logo" alt="Lotus flower logo" src="images/lotus-flower-logo.png" width=""200px height="107px" />
+        <p><strong>Phone number: </strong><a href="tel:5613333333">561-333-3333</a><br />
+        <p><strong>Email: </strong><a href="mailto:saracarmel7@gmail.com">saracarmel7@gmail.com</a><br />
+        <strong>Address: </strong>145 SW 74 St. Fort Lauderdale, FL, 33314</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.2253638622083!2d-80.15933422457977!3d26.35157187698606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c24d5909985%3A0x24fcf86533e0f2f0!2s7146%20Beracasa%20Way%2C%20Boca%20Raton%2C%20FL%2033433%2C%20USA!5e0!3m2!1sen!2sdo!4v1739926031112!5m2!1sen!2sdo" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
 
 
     <div class="column footer">
-        <h3>Column 2</h3>
+        <h2>Follow us on Youtube</h2>
+        <iframe width="100%" height="568" src="https://www.youtube.com/embed/yYOoY6SVZpw" title="calm your heart... (relaxing animal crossing music &amp; rain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
     </div>
 
 
     <div class="column footer">
-        <h3>Column 3</h3>
+        <h2>Important Links</h2>
+        <ul class="footer-links">
+        <li class="footer-links"><a class="footer-links" title="Zamber Miraculous Video" target="_blank" href="https://www.youtube.com/watch?v=DiT6Xr6zkGM">Zamber</a></li>
+        <li class="footer-links"><a class="footer-links" title="Jacob Black Wiki" target="_blank" href="https://twilightsaga.fandom.com/wiki/Jacob_Black">Jacob</a></li>
+        <li class="footer-links"><a class="footer-links" title="Kyoya Tategami Wiki" target="_blank" href="https://beyblade.fandom.com/wiki/Kyoya_Tategami">Kyoya</a></li>
+        <li class="footer-links"><a class="footer-links" title="New Jeans Video" target="_blank" href="https://www.youtube.com/watch?v=MfO1FenJbKI">NewJeans</a></li>
+        <li class="footer-links"><a class="footer-links" title="Ryuga Wiki" target="_blank" href="https://beyblade.fandom.com/wiki/Ryuga">Ryuga</a></li>
+        <li class="footer-links"><a class="footer-links" title="Get Lost Moana Video" target="_blank" href="https://www.youtube.com/watch?v=PnXeoclCDpA">Moana</a></li>
+        <li class="footer-links"><a class="footer-links" title="Sylveon Wiki" target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Sylveon_(Pok%C3%A9mon)">Sylveon</a></li>
+        <li class="footer-links"><a class="footer-links" title="Alcreamie Wiki" target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Alcremie_(Pok%C3%A9mon)">Alcreamie</a></li>
+        <li class="footer-links"><a class="footer-links" title="Umbreon Wiki" target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Umbreon_(Pok%C3%A9mon)">Umbreon</a></li>
+        <li class="footer-links"><a class="footer-links" title="Flareon Wiki" target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Flareon_(Pok%C3%A9mon)">Flareon</a></li>
+
+        </ul>
     </div>
 </footer>
 <div class="column copyright">
