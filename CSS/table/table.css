@@ -5,7 +5,7 @@ table, th, td{
     padding: 10px;
 }
 
-th{
+.table1 th{
     background-color: red;
     color: white;
     text-transform: uppercase;
@@ -48,14 +48,14 @@ th{
     text-align: center;
 } */
 
-/*Style for the homework table*/
+/*Style for the Homework table*/
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
 }
 
-th{
+.table2 th{
     background-color: black;
     color: white;
     text-transform: uppercase;
